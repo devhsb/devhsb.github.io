@@ -7,6 +7,22 @@
   font-family: azonix;
   src: url(fonts/azonix/Azonix.otf); }
 
+.hide {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-100%);
+  transform: rotate(20deg);
+  transition: all 1s; }
+
+@media (prefers-reduced-motion) {
+  .hide {
+    transition: none; } }
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%); }
+
 @keyframes projectView {
   0% {
     background-position: top; }
@@ -81,6 +97,7 @@ a {
   box-sizing: border-box; }
 
 html {
+  scroll-behavior: smooth;
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -91,11 +108,9 @@ html {
     left: 0;
     width: 100%;
     height: 300vh;
-    background: url(images/wallpaper-back.webp);
-    background-position: left;
+    background: url(images/black-animated.gif);
     z-index: -1;
-    opacity: 0.07;
-    background-size: cover; }
+    opacity: 0.2; }
 
 .anon-img {
   position: absolute;
@@ -145,14 +160,16 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 4rem; }
-  #container .home .hero .skill {
+  #container .home .hero .skill_container .skill {
     font-family: vampire, sans-serif;
     letter-spacing: 0.5rem;
     font-size: 4.7rem;
     font-weight: 500;
     margin-left: 50%;
     transform: translateX(-50%);
-    width: fit-content; }
+    width: fit-content;
+    text-align: center;
+    color: firebrick; }
   #container .home .hero .intro {
     margin-top: 5rem; }
     #container .home .hero .intro .intro_heading {
@@ -160,13 +177,33 @@ body {
       #container .home .hero .intro .intro_heading .iam {
         font-weight: 400; }
     #container .home .hero .intro .intro_para {
-      width: 65%;
       font-size: 0.8rem;
-      line-height: 1.2rem;
-      text-align: justify; }
+      line-height: 1.2rem; }
+  #container .home .hero .home_buttons {
+    margin-top: 2rem; }
+    #container .home .hero .home_buttons .about_me {
+      background-color: #009e66;
+      padding: .7rem 1.5rem;
+      border-radius: 10px;
+      color: #2a2e31;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: black;
+      font-size: .8rem;
+      text-shadow: 0 0 5px #d4d4d4;
+      cursor: pointer;
+      margin-left: 1rem; }
+  #container .home .hero .primary_languages {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-25%); }
+    #container .home .hero .primary_languages img {
+      height: 20rem;
+      width: 30rem; }
 
 #container .projects {
-  background-color: #ffffff08;
+  background-color: #000;
   margin: 2rem;
   border-radius: 2rem 0;
   padding: 1.5rem 3rem;
@@ -426,6 +463,12 @@ body {
   letter-spacing: 0.1rem; }
 
 @media screen and (max-width: 1080px) {
+  #container .home .hero .primary_languages {
+    top: 55%;
+    left: 60%;
+    transform: translateX(-50%); }
+    #container .home .hero .primary_languages img {
+      width: 20rem; }
   .about .mypic {
     display: none; }
   .about .details .experoence {
@@ -439,6 +482,19 @@ body {
     transform: translateX(-50%); }
   #container .home .hero .skill {
     font-size: 3.5rem; }
+    #container .home .hero .skill .skill_typing {
+      font-size: 3rem; }
+  #container .home .hero .intro {
+    margin-top: 20px;
+    left: 50%; }
+  #container .home .hero .home_buttons {
+    margin-top: 50px; }
+  #container .home .hero .primary_languages {
+    top: 55%;
+    right: -50%;
+    transform: translateX(-40%); }
+    #container .home .hero .primary_languages img {
+      width: 17rem; }
   #container .projects .main-header {
     font-size: 1.6rem; }
   #container .projects .cards a {
@@ -449,3 +505,13 @@ body {
     top: -120px; }
   #container .about .details {
     margin: -20px 0; } }
+
+@keyframes start_typing {
+  3% {
+    left: 0%; }
+  30% {
+    left: 100%; }
+  80% {
+    left: 100%; }
+  100% {
+    left: 0%; } }

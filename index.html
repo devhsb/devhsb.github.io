@@ -29,15 +29,30 @@
 
         <!-- Hero -->
         <div class="hero">
-          <h1 class="skill">
-            <span class="bracket">&lt/</span>Android<span class="bracket">&gt</span>
-          </h1>
+          <div class="skill_container">
+            <h1 class="skill">
+              <span style="font-size: 1rem; display: block;">Hobbies</span>
+              <span class="skill_typing" data-value=""></span>
+            </h1>
+          </div>
+          
 
-          <div class="intro">
+          <div class="intro hide">
             <h2 class="intro_heading">
               <span class="iam">i'm</span> Haseebullah
             </h2>
-            <p class="intro_para">Full Stack Developer</p>
+            <p class="intro_para">Self-taught Java & passionate Android Developer</p>
+          </div>
+
+          <div class="home_buttons">
+            <a href="#about" class="about_me">About Me</a>
+            <a href="#projects" class="about_me my_projects">Projects</a>
+          </div>
+
+          <div class="primary_languages">
+            <a href="#about">
+              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devhsb&layout=compact&show_icons=true&bg_color=00000000&title_color=009e66&text_color=fff&rank_icon=percentile&langs_count=4&hide=html,css" />
+            </a>
           </div>
         </div>
         <!-- Hero Section End -->
@@ -45,7 +60,7 @@
       <!-- Home Section End -->
 
       <!-- Projects Section -->
-      <div class="section projects">
+      <div class="section projects" id="projects">
         <h1 class="main-header">coffee Times</h1>
         <h1 class="section_header">
           <span class="letter-style">W</span>eb
@@ -53,18 +68,18 @@
         </h1>
         <div class="skills">
           <ul>
-            <li>Html</li>
-            <li>css</li>
-            <li>scss</li>
-            <li>Javascript</li>
-            <li>JQUERY</li>
+            <li class="hide">Html</li>
+            <li class="hide">css</li>
+            <li class="hide">scss</li>
+            <li class="hide">Javascript</li>
+            <li class="hide">JQUERY</li>
           </ul>
         </div>
 
         <!-- Web Projects -->
         <div class="cards">
 
-          <a href="https://github.com/HaSeebPjr/Web_Online-Kitchen" class="card">
+          <a class="hide" href="https://github.com/devhsb/Web_Online-Kitchen" class="card">
             <div class="card">
               <h1 class="section_header card_header">Online Kitchen</h1>
               <p class="langs">Html | Css | Javascript</p>
@@ -73,7 +88,7 @@
           </a>
           
 
-          <a href="https://github.com/HaSeebPjr/Web_Maths-Game">
+          <a class="hide" href="https://github.com/devhsb/Web_Maths-Game">
             <div class="card">
               <h1 class="section_header card_header">Math Game</h1>
               <p class="langs">HTML | SCSS | Javascript</p>
@@ -82,7 +97,7 @@
           </a>
           
 
-          <a href="https://github.com/HaSeebPjr/Web_Fruit-Slice">
+          <a class="hide" href="https://github.com/devhsb/Web_Fruit-Slice">
           <div class="card">
             <h1 class="section_header card_header">Fruit Slice</h1>
             <p class="langs">html | CSS | JQUERY</p>
@@ -90,7 +105,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/HaSeebPjr/Web_Guessing-Game">
+        <a class="hide" href="https://github.com/devhsb/Web_Guessing-Game">
           <div class="card">
             <h1 class="section_header card_header">Guessing Game</h1>
             <p class="langs">html | CSS | Javascript</p>
@@ -113,13 +128,15 @@
 
         <div class="skills">
           <ul>
-            <li>Java</li>
-            <li>xml</li>
-            <li>firebase</li>
+            <li class="hide">Kotlin</li>
+            <li class="hide">Compose</li>
+            <li class="hide">Java</li>
+            <li class="hide">xml</li>
+            <li class="hide">firebase</li>
           </ul>
         </div>
 
-        <a href="https://github.com/HaSeebPjr/Android_ChatGPT">
+        <a class="hide" href="https://github.com/devhsb/Android_ChatGPT">
         <div class="cards android-cards">
           <div class="card">
             <h1 class="section_header card_header">Chat Gpt</h1>
@@ -128,7 +145,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/HaSeebPjr/Android_Image-editor">
+        <a class="hide" href="https://github.com/devhsb/Android_Image-editor">
           <div class="card">
             <h1 class="section_header card_header">Image Editor</h1>
             <p class="langs">java | opencv</p>
@@ -136,7 +153,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/HaSeebPjr/Android_Todo-List">
+        <a class="hide" href="https://github.com/devhsb/Android_Todo-List">
           <div class="card">
             <h1 class="section_header card_header">Todo</h1>
             <p class="langs">java | room</p>
@@ -144,7 +161,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/HaSeebPjr/Android_Contact-Manager">
+        <a class="hide" href="https://github.com/devhsb/Android_Contact-Manager">
           <div class="card">
             <h1 class="section_header card_header">Contact Manager</h1>
             <p class="langs">java | sqlite</p>
@@ -152,7 +169,7 @@
           </div>
         </a>
 
-        <a href="https://github.com/HaSeebPjr/Android_Image-Generator">
+        <a class="hide" href="https://github.com/devhsb/Android_Image-Generator">
           <div class="card">
             <h1 class="section_header card_header">Image Generator</h1>
             <p class="langs">java | Api</p>
@@ -173,11 +190,11 @@
 </div>
 
       <!-- About Section -->
-      <div class="section about">
+      <div class="section about" id="about">
         <h1 class="main-header">About</h1>
         <img src="images/my-pic-transparent.png" class="mypic" />
 
-        <div class="details">
+        <div class="details hide">
           <h1 class="section_header">Haseebullah Azizi</h1>
           <p class="skills">Web & Java Developer</p>
 
@@ -200,7 +217,7 @@
         </div>
 
         <div class="social-media">
-          <a href="https://github.com/HaSeebPjr">
+          <a href="https://github.com/devhsb">
             <img
               src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png"
               alt="github"
@@ -229,6 +246,6 @@
 
     </div>
 
-    <script type="text/Javascript" src="script.js"></script>
+    <script  defer type="text/Javascript" src="script.js"></script>
   </body>
 </html>
