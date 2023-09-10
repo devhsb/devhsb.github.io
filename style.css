@@ -133,7 +133,9 @@ body {
   padding: 1.5rem 5rem;
   display: flex;
   align-items: center;
-  background-color: black; }
+  background-color: #000;
+  width: 100%;
+  z-index: 1; }
   #container .home header .brand {
     display: flex;
     align-items: center; }
@@ -477,34 +479,63 @@ body {
     margin: 12rem -5rem; } }
 
 @media screen and (max-width: 680px) {
+  #container .header {
+    justify-content: center; }
+  #container .main-header {
+    font-size: 1.2rem; }
   #container .home .header {
     left: 50%;
     transform: translateX(-50%); }
-  #container .home .hero .skill {
-    font-size: 3.5rem; }
-    #container .home .hero .skill .skill_typing {
-      font-size: 3rem; }
-  #container .home .hero .intro {
-    margin-top: 20px;
-    left: 50%; }
-  #container .home .hero .home_buttons {
-    margin-top: 50px; }
-  #container .home .hero .primary_languages {
-    top: 55%;
-    right: -50%;
-    transform: translateX(-40%); }
-    #container .home .hero .primary_languages img {
-      width: 17rem; }
-  #container .projects .main-header {
-    font-size: 1.6rem; }
-  #container .projects .cards a {
-    min-width: 17rem; }
+  #container .home .hero {
+    padding: 2rem; }
+    #container .home .hero .skill {
+      font-size: 3.5rem; }
+      #container .home .hero .skill .skill_typing {
+        position: relative;
+        top: -20px;
+        font-size: 3rem; }
+    #container .home .hero .intro {
+      margin-top: 20px;
+      left: 50%; }
+    #container .home .hero .home_buttons {
+      margin-top: 50px; }
+    #container .home .hero .primary_languages {
+      top: 55%;
+      right: -50%;
+      transform: translateX(-50%); }
+      #container .home .hero .primary_languages img {
+        width: 17rem; }
+  #container .projects {
+    padding: 10px;
+    margin: 2rem .7rem; }
+    #container .projects .section_header {
+      display: block;
+      text-align: center; }
+    #container .projects .skills ul {
+      justify-content: center;
+      margin: 1.5rem 0; }
+    #container .projects .cards a {
+      min-width: 14rem;
+      padding: 0; }
+      #container .projects .cards a .card .card_header {
+        font-size: 1.2rem;
+        margin: 1.5rem; }
+      #container .projects .cards a .card .langs {
+        font-size: .7rem;
+        line-height: 1.5rem; }
   #container .scroll {
     display: none; }
   #container .about .main-header {
-    top: -120px; }
+    top: -100px; }
   #container .about .details {
-    margin: -20px 0; } }
+    margin: -20px 0; }
+    #container .about .details h1 {
+      font-size: 1.4rem; }
+    #container .about .details .experoence {
+      font-size: .8rem; }
+  #container .about .social-media {
+    bottom: 20px;
+    right: 100px; } }
 
 @keyframes start_typing {
   3% {
