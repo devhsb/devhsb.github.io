@@ -39,7 +39,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 15px 20px; }
+  margin: 15px 20px;
+  width: 500px; }
   .skills ul li {
     width: fit-content;
     text-align: center;
@@ -341,7 +342,7 @@ body {
     width: 1.5rem;
     color: #009e66;
     position: absolute;
-    top: 145px;
+    top: 150px;
     opacity: 0.4;
     right: 20px;
     background: #009e66;
@@ -366,29 +367,52 @@ body {
     #container .projects .android-cards a .card_header {
       font-size: 1.2rem; }
     #container .projects .android-cards a .langs {
-      font-size: 0.7rem; }
-    #container .projects .android-cards a:nth-child(1)::before {
-      background-image: url(images/projects/android/chatGpt.webp); }
+      font-size: 0.7rem;
+      line-height: 1.7; }
+    #container .projects .android-cards a:nth-child(1) {
+      box-shadow: 0 0 5px #009da8; }
+      #container .projects .android-cards a:nth-child(1):hover::before {
+        animation: projectView 5s 1s linear; }
+      #container .projects .android-cards a:nth-child(1) .card_header {
+        color: #009da8; }
+      #container .projects .android-cards a:nth-child(1):hover {
+        box-shadow: 0 0 5px 3px #009da8;
+        transition: all 0.5s; }
+      #container .projects .android-cards a:nth-child(1)::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(images/projects/android/bookcha.webp);
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 100%;
+        left: 0; }
+      #container .projects .android-cards a:nth-child(1):hover::before {
+        top: 0;
+        transition: all 0.5s; }
+      #container .projects .android-cards a:nth-child(1):not(:hover)::before {
+        transition: all 0.5s; }
     #container .projects .android-cards a:nth-child(2)::before {
-      background-image: url(images/projects/android/imageEditor.webp); }
+      background-image: url(images/projects/android/chatGpt.webp); }
     #container .projects .android-cards a:nth-child(3)::before {
-      background-image: url(images/projects/android/todoApp.webp); }
+      background-image: url(images/projects/android/imageEditor.webp); }
     #container .projects .android-cards a:nth-child(4)::before {
-      background-image: url(images/projects/android/contactManager.webp); }
+      background-image: url(images/projects/android/todoApp.webp); }
     #container .projects .android-cards a:nth-child(5) {
-      box-shadow: 0 0 5px #c96c7e; }
+      box-shadow: 0 0 5px #82ffbe; }
       #container .projects .android-cards a:nth-child(5):hover::before {
         animation: projectView 5s 1s linear; }
       #container .projects .android-cards a:nth-child(5) .card_header {
-        color: #c96c7e; }
+        color: #82ffbe; }
       #container .projects .android-cards a:nth-child(5):hover {
-        box-shadow: 0 0 5px 3px #c96c7e;
+        box-shadow: 0 0 5px 3px #82ffbe;
         transition: all 0.5s; }
       #container .projects .android-cards a:nth-child(5)::before {
         content: "";
         width: 100%;
         height: 100%;
-        background: url(images/projects/android/imageGenerator.webp);
+        background: url(images/projects/android/contactManager.webp);
         background-size: cover;
         background-position: top;
         position: absolute;
@@ -398,6 +422,30 @@ body {
         top: 0;
         transition: all 0.5s; }
       #container .projects .android-cards a:nth-child(5):not(:hover)::before {
+        transition: all 0.5s; }
+    #container .projects .android-cards a:nth-child(6) {
+      box-shadow: 0 0 5px #c96c7e; }
+      #container .projects .android-cards a:nth-child(6):hover::before {
+        animation: projectView 5s 1s linear; }
+      #container .projects .android-cards a:nth-child(6) .card_header {
+        color: #c96c7e; }
+      #container .projects .android-cards a:nth-child(6):hover {
+        box-shadow: 0 0 5px 3px #c96c7e;
+        transition: all 0.5s; }
+      #container .projects .android-cards a:nth-child(6)::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(images/projects/android/imageGenerator.webp);
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 100%;
+        left: 0; }
+      #container .projects .android-cards a:nth-child(6):hover::before {
+        top: 0;
+        transition: all 0.5s; }
+      #container .projects .android-cards a:nth-child(6):not(:hover)::before {
         transition: all 0.5s; }
 
 #container .about {
@@ -513,7 +561,8 @@ body {
       text-align: center; }
     #container .projects .skills ul {
       justify-content: center;
-      margin: 1.5rem 0; }
+      margin: 1.5rem 0;
+      width: initial; }
     #container .projects .cards a {
       min-width: 14rem;
       padding: 0; }
@@ -522,7 +571,7 @@ body {
         margin: 1.5rem; }
       #container .projects .cards a .card .langs {
         font-size: 0.7rem;
-        line-height: 1.5rem; }
+        line-height: 1.7; }
   #container .scroll {
     display: none; }
   #container .about {
