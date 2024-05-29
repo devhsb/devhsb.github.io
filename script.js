@@ -33,7 +33,7 @@ elements.forEach((el) => observer.observe(el));
 
 //Skills animate
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const words = ["Java", "Android", "Web"];
+const words = ["Java", "Kotlin", "Android"];
 let interval = null;
 let wordIndex = 0;
 

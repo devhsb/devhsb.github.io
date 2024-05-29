@@ -1,55 +1,60 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,500;1,700&display=swap";
 @font-face {
   font-family: vampire;
-  src: url(fonts/vampire/Vampire_Wars.ttf); }
-
+  src: url(fonts/vampire/Vampire_Wars.ttf);
+}
 @font-face {
   font-family: azonix;
-  src: url(fonts/azonix/Azonix.otf); }
-
+  src: url(fonts/azonix/Azonix.otf);
+}
 .hide {
   opacity: 0;
   filter: blur(2px);
   transform: translateX(-100%);
   transform: rotate(20deg);
-  transition: all 1s; }
-
+  transition: all 1s;
+}
 @media (prefers-reduced-motion) {
   .hide {
-    transition: none; } }
-
+    transition: none;
+  }
+}
 .show {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0%); }
-
+  transform: translateX(0%);
+}
 @keyframes projectView {
   0% {
-    background-position: top; }
+    background-position: top;
+  }
   50% {
-    background-position: bottom; }
+    background-position: bottom;
+  }
   100% {
-    background-position: top; } }
-
+    background-position: top;
+  }
+}
 a {
   text-decoration: none;
-  color: #d4d4d4; }
-
+  color: #d4d4d4;
+}
 .skills ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 15px 20px;
-  width: 500px; }
-  .skills ul li {
-    width: fit-content;
-    text-align: center;
-    margin: 5px;
-    text-transform: uppercase;
-    padding: 0.5rem 0.7rem;
-    border-radius: 10px;
-    box-shadow: inset 0 0 2px #009e66, 0 0 3px #009e66; }
-
+  width: 500px;
+}
+.skills ul li {
+  width: fit-content;
+  text-align: center;
+  margin: 5px;
+  text-transform: uppercase;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #009e66, 0 0 3px #009e66;
+}
 .main-header {
   position: absolute;
   left: 50%;
@@ -63,11 +68,11 @@ a {
   border-right: 3px solid #009e66;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  padding: 10px 20px; }
-
+  padding: 10px 20px;
+}
 .letter-style {
-  color: #009e66; }
-
+  color: #009e66;
+}
 .section_header {
   font-size: 1.5 rem;
   display: inline-block;
@@ -78,55 +83,56 @@ a {
   padding: 0.3rem 0.7rem;
   font-weight: 700;
   margin: 0 20px;
-  text-transform: uppercase; }
-
+  text-transform: uppercase;
+}
 .section {
-  min-height: 100vh; }
-
+  min-height: 100vh;
+}
 #big-letter {
-  font-size: 5rem; }
-
+  font-size: 5rem;
+}
 a {
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .bracket {
-  color: #2a2e31; }
-
+  color: #2a2e31;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
   background-color: black;
   background-size: cover;
-  background-repeat: no-repeat; }
-  html::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300vh;
-    background: url(images/black-animated.gif);
-    z-index: -1;
-    opacity: 0.2; }
-
+  background-repeat: no-repeat;
+}
+html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300vh;
+  background: url(images/black-animated.gif);
+  z-index: -1;
+  opacity: 0.2;
+}
 .anon-img {
   position: absolute;
   right: 0;
   border-radius: 0 50%;
   height: 100vh;
   pointer-events: none;
-  z-index: -2; }
-
+  z-index: -2;
+}
 body {
   font-family: Montserrat, sans-serif;
   color: #d4d4d4;
   font-size: 10px;
-  letter-spacing: 0.1rem; }
-
+  letter-spacing: 0.1rem;
+}
 #container .home header {
   height: 4rem;
   position: fixed;
@@ -136,467 +142,705 @@ body {
   align-items: center;
   background-color: #000;
   width: 100%;
-  z-index: 1; }
-  #container .home header .brand {
-    display: flex;
-    align-items: center; }
-    #container .home header .brand .my_img {
-      height: 2rem;
-      border-radius: 50%;
-      margin-right: 0.5rem; }
-    #container .home header .brand #brand {
-      font-family: azonix, sans-serif;
-      font-size: 0.8rem; }
-  #container .home header ul {
-    position: absolute;
-    right: 2rem;
-    font-size: 1.4em; }
-    #container .home header ul li {
-      display: inline;
-      margin-right: 2.5rem; }
-      #container .home header ul li a {
-        color: #d4d4d4; }
-
+  z-index: 1;
+}
+#container .home header .brand {
+  display: flex;
+  align-items: center;
+}
+#container .home header .brand .my_img {
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+#container .home header .brand #brand {
+  font-family: azonix, sans-serif;
+  font-size: 0.8rem;
+}
+#container .home header ul {
+  position: absolute;
+  right: 2rem;
+  font-size: 1.4em;
+}
+#container .home header ul li {
+  display: inline;
+  margin-right: 2.5rem;
+}
+#container .home header ul li a {
+  color: #d4d4d4;
+}
 #container .home .hero {
   padding: 1.5rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 4rem; }
-  #container .home .hero .skill_container .skill {
-    font-family: vampire, sans-serif;
-    letter-spacing: 0.5rem;
-    font-size: 4.7rem;
-    font-weight: 500;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    text-align: center;
-    color: firebrick; }
-  #container .home .hero .intro {
-    margin-top: 5rem; }
-    #container .home .hero .intro .intro_heading {
-      font-size: 2rem; }
-      #container .home .hero .intro .intro_heading .iam {
-        font-weight: 400; }
-    #container .home .hero .intro .intro_para {
-      font-size: 0.8rem;
-      line-height: 1.2rem; }
-  #container .home .hero .home_buttons {
-    margin-top: 2rem; }
-    #container .home .hero .home_buttons .about_me {
-      background-color: #009e66;
-      padding: 0.7rem 1.5rem;
-      border-radius: 10px;
-      color: #2a2e31;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: black;
-      font-size: 0.8rem;
-      text-shadow: 0 0 5px #d4d4d4;
-      cursor: pointer;
-      margin-left: 1rem; }
-  #container .home .hero .primary_languages {
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-25%); }
-    #container .home .hero .primary_languages img {
-      height: 20rem;
-      width: 30rem; }
-
+  margin-top: 4rem;
+}
+#container .home .hero .skill_container .skill {
+  font-family: vampire, sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 4.7rem;
+  font-weight: 500;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  text-align: center;
+  color: firebrick;
+}
+#container .home .hero .intro {
+  margin-top: 5rem;
+}
+#container .home .hero .intro .intro_heading {
+  font-size: 2rem;
+}
+#container .home .hero .intro .intro_heading .iam {
+  font-weight: 400;
+}
+#container .home .hero .intro .intro_para {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+#container .home .hero .home_buttons {
+  margin-top: 2rem;
+}
+#container .home .hero .home_buttons .about_me {
+  background-color: #009e66;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  color: #2a2e31;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.8rem;
+  text-shadow: 0 0 5px #d4d4d4;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+#container .home .hero .primary_languages {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-25%);
+}
+#container .home .hero .primary_languages img {
+  height: 20rem;
+  width: 30rem;
+}
 #container .projects {
   background-color: #000;
   margin: 2rem;
   border-radius: 2rem 0;
   padding: 1.5rem 3rem;
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.12), inset 0px 0px 15px rgba(255, 255, 255, 0.12);
-  position: relative; }
-  #container .projects .cards {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px 5px;
-    overflow: scroll;
-    scroll-behavior: smooth; }
-    #container .projects .cards::-webkit-scrollbar {
-      display: none; }
-    #container .projects .cards a {
-      min-width: 30rem;
-      min-height: 20rem;
-      margin: 20px;
-      box-shadow: -2px -1px 10px black, 2px 1px 10px black;
-      border-radius: 0 35px;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer; }
-      #container .projects .cards a .card_header {
-        border: none;
-        text-shadow: 0 0 3px black;
-        font-weight: 900;
-        font-size: 2rem; }
-      #container .projects .cards a .langs {
-        text-transform: uppercase;
-        font-size: 0.8rem; }
-      #container .projects .cards a h2 {
-        margin-top: 4rem; }
-      #container .projects .cards a:nth-child(1) {
-        box-shadow: 0 0 5px #ff5100; }
-        #container .projects .cards a:nth-child(1):hover::before {
-          animation: projectView 5s 1s linear; }
-        #container .projects .cards a:nth-child(1) .card_header {
-          color: #ff5100; }
-        #container .projects .cards a:nth-child(1):hover {
-          box-shadow: 0 0 5px 3px #ff5100;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(1)::before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: url(images/projects/online-kitchen.webp);
-          background-size: cover;
-          background-position: top;
-          position: absolute;
-          top: 100%;
-          left: 0; }
-        #container .projects .cards a:nth-child(1):hover::before {
-          top: 0;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(1):not(:hover)::before {
-          transition: all 0.5s; }
-      #container .projects .cards a:nth-child(2) {
-        box-shadow: 0 0 5px #009e66; }
-        #container .projects .cards a:nth-child(2):hover::before {
-          animation: projectView 5s 1s linear; }
-        #container .projects .cards a:nth-child(2) .card_header {
-          color: #009e66; }
-        #container .projects .cards a:nth-child(2):hover {
-          box-shadow: 0 0 5px 3px #009e66;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(2)::before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: url(images/projects/math-game.webp);
-          background-size: cover;
-          background-position: top;
-          position: absolute;
-          top: 100%;
-          left: 0; }
-        #container .projects .cards a:nth-child(2):hover::before {
-          top: 0;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(2):not(:hover)::before {
-          transition: all 0.5s; }
-      #container .projects .cards a:nth-child(3) {
-        box-shadow: 0 0 5px #fb024e; }
-        #container .projects .cards a:nth-child(3):hover::before {
-          animation: projectView 5s 1s linear; }
-        #container .projects .cards a:nth-child(3) .card_header {
-          color: #fb024e; }
-        #container .projects .cards a:nth-child(3):hover {
-          box-shadow: 0 0 5px 3px #fb024e;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(3)::before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: url(images/projects/fruit-game.webp);
-          background-size: cover;
-          background-position: top;
-          position: absolute;
-          top: 100%;
-          left: 0; }
-        #container .projects .cards a:nth-child(3):hover::before {
-          top: 0;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(3):not(:hover)::before {
-          transition: all 0.5s; }
-      #container .projects .cards a:nth-child(4) {
-        box-shadow: 0 0 5px #45668e; }
-        #container .projects .cards a:nth-child(4):hover::before {
-          animation: projectView 5s 1s linear; }
-        #container .projects .cards a:nth-child(4) .card_header {
-          color: #45668e; }
-        #container .projects .cards a:nth-child(4):hover {
-          box-shadow: 0 0 5px 3px #45668e;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(4)::before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: url(images/projects/guessing-game.webp);
-          background-size: cover;
-          background-position: top;
-          position: absolute;
-          top: 100%;
-          left: 0; }
-        #container .projects .cards a:nth-child(4):hover::before {
-          top: 0;
-          transition: all 0.5s; }
-        #container .projects .cards a:nth-child(4):not(:hover)::before {
-          transition: all 0.5s; }
-  #container .projects .scroll {
-    height: 20.2rem;
-    width: 1.5rem;
-    color: #009e66;
-    position: absolute;
-    top: 150px;
-    opacity: 0.4;
-    right: 20px;
-    background: #009e66;
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem; }
-    #container .projects .scroll .nextArrow {
-      width: 2rem;
-      height: 2rem;
-      position: absolute;
-      right: -14px;
-      top: 30%;
-      background-color: #009e66;
-      border: none;
-      transform: rotate(45deg);
-      cursor: pointer;
-      z-index: 5; }
-    #container .projects .scroll .prevArrow {
-      right: 6px;
-      top: 60%; }
-  #container .projects .android-cards a {
-    min-width: 15rem; }
-    #container .projects .android-cards a .card_header {
-      font-size: 1.2rem; }
-    #container .projects .android-cards a .langs {
-      font-size: 0.7rem;
-      line-height: 1.7; }
-    #container .projects .android-cards a:nth-child(1) {
-      box-shadow: 0 0 5px #009da8; }
-      #container .projects .android-cards a:nth-child(1):hover::before {
-        animation: projectView 5s 1s linear; }
-      #container .projects .android-cards a:nth-child(1) .card_header {
-        color: #009da8; }
-      #container .projects .android-cards a:nth-child(1):hover {
-        box-shadow: 0 0 5px 3px #009da8;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(1)::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: url(images/projects/android/bookcha.webp);
-        background-size: cover;
-        background-position: top;
-        position: absolute;
-        top: 100%;
-        left: 0; }
-      #container .projects .android-cards a:nth-child(1):hover::before {
-        top: 0;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(1):not(:hover)::before {
-        transition: all 0.5s; }
-    #container .projects .android-cards a:nth-child(2)::before {
-      background-image: url(images/projects/android/chatGpt.webp); }
-    #container .projects .android-cards a:nth-child(3)::before {
-      background-image: url(images/projects/android/imageEditor.webp); }
-    #container .projects .android-cards a:nth-child(4)::before {
-      background-image: url(images/projects/android/todoApp.webp); }
-    #container .projects .android-cards a:nth-child(5) {
-      box-shadow: 0 0 5px #82ffbe; }
-      #container .projects .android-cards a:nth-child(5):hover::before {
-        animation: projectView 5s 1s linear; }
-      #container .projects .android-cards a:nth-child(5) .card_header {
-        color: #82ffbe; }
-      #container .projects .android-cards a:nth-child(5):hover {
-        box-shadow: 0 0 5px 3px #82ffbe;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(5)::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: url(images/projects/android/contactManager.webp);
-        background-size: cover;
-        background-position: top;
-        position: absolute;
-        top: 100%;
-        left: 0; }
-      #container .projects .android-cards a:nth-child(5):hover::before {
-        top: 0;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(5):not(:hover)::before {
-        transition: all 0.5s; }
-    #container .projects .android-cards a:nth-child(6) {
-      box-shadow: 0 0 5px #c96c7e; }
-      #container .projects .android-cards a:nth-child(6):hover::before {
-        animation: projectView 5s 1s linear; }
-      #container .projects .android-cards a:nth-child(6) .card_header {
-        color: #c96c7e; }
-      #container .projects .android-cards a:nth-child(6):hover {
-        box-shadow: 0 0 5px 3px #c96c7e;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(6)::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: url(images/projects/android/imageGenerator.webp);
-        background-size: cover;
-        background-position: top;
-        position: absolute;
-        top: 100%;
-        left: 0; }
-      #container .projects .android-cards a:nth-child(6):hover::before {
-        top: 0;
-        transition: all 0.5s; }
-      #container .projects .android-cards a:nth-child(6):not(:hover)::before {
-        transition: all 0.5s; }
-
+  position: relative;
+}
+#container .projects .cards {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 5px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+#container .projects .cards::-webkit-scrollbar {
+  display: none;
+}
+#container .projects .cards a {
+  min-width: 30rem;
+  min-height: 20rem;
+  margin: 20px;
+  box-shadow: -2px -1px 10px black, 2px 1px 10px black;
+  border-radius: 0 35px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#container .projects .cards a .card_header {
+  border: none;
+  text-shadow: 0 0 3px black;
+  font-weight: 900;
+  font-size: 2rem;
+}
+#container .projects .cards a .langs {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+#container .projects .cards a h2 {
+  margin-top: 4rem;
+}
+#container .projects .cards a:nth-child(1) {
+  box-shadow: 0 0 5px #ff5100;
+}
+#container .projects .cards a:nth-child(1):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .cards a:nth-child(1) .card_header {
+  color: #ff5100;
+}
+#container .projects .cards a:nth-child(1):hover {
+  box-shadow: 0 0 5px 3px #ff5100;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(1)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/online-kitchen.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .cards a:nth-child(1):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(1):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(2) {
+  box-shadow: 0 0 5px #009e66;
+}
+#container .projects .cards a:nth-child(2):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .cards a:nth-child(2) .card_header {
+  color: #009e66;
+}
+#container .projects .cards a:nth-child(2):hover {
+  box-shadow: 0 0 5px 3px #009e66;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(2)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/math-game.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .cards a:nth-child(2):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(2):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(3) {
+  box-shadow: 0 0 5px #fb024e;
+}
+#container .projects .cards a:nth-child(3):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .cards a:nth-child(3) .card_header {
+  color: #fb024e;
+}
+#container .projects .cards a:nth-child(3):hover {
+  box-shadow: 0 0 5px 3px #fb024e;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(3)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/fruit-game.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .cards a:nth-child(3):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(3):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(4) {
+  box-shadow: 0 0 5px #45668e;
+}
+#container .projects .cards a:nth-child(4):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .cards a:nth-child(4) .card_header {
+  color: #45668e;
+}
+#container .projects .cards a:nth-child(4):hover {
+  box-shadow: 0 0 5px 3px #45668e;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(4)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/guessing-game.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .cards a:nth-child(4):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .cards a:nth-child(4):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .scroll {
+  height: 20.2rem;
+  width: 1.5rem;
+  color: #009e66;
+  position: absolute;
+  top: 150px;
+  opacity: 0.4;
+  right: 20px;
+  background: #009e66;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+#container .projects .scroll .nextArrow {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: -14px;
+  top: 30%;
+  background-color: #009e66;
+  border: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+  z-index: 5;
+}
+#container .projects .scroll .prevArrow {
+  right: 6px;
+  top: 60%;
+}
+#container .projects .android-cards a {
+  min-width: 15rem;
+}
+#container .projects .android-cards a .card_header {
+  font-size: 1.2rem;
+}
+#container .projects .android-cards a .langs {
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+#container .projects .android-cards a:nth-child(1) {
+  box-shadow: 0 0 5px #70ffb0;
+}
+#container .projects .android-cards a:nth-child(1):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(1) .card_header {
+  color: #70ffb0;
+}
+#container .projects .android-cards a:nth-child(1):hover {
+  box-shadow: 0 0 5px 3px #70ffb0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(1)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/wordsheet.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(1):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(1):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(2) {
+  box-shadow: 0 0 5px #009da8;
+}
+#container .projects .android-cards a:nth-child(2):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(2) .card_header {
+  color: #009da8;
+}
+#container .projects .android-cards a:nth-child(2):hover {
+  box-shadow: 0 0 5px 3px #009da8;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(2)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/bookcha.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(2):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(2):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(3) {
+  box-shadow: 0 0 5px #009761;
+}
+#container .projects .android-cards a:nth-child(3):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(3) .card_header {
+  color: #009761;
+}
+#container .projects .android-cards a:nth-child(3):hover {
+  box-shadow: 0 0 5px 3px #009761;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(3)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/chatGpt.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(3):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(3):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(4) {
+  box-shadow: 0 0 5px #fb024e;
+}
+#container .projects .android-cards a:nth-child(4):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(4) .card_header {
+  color: #fb024e;
+}
+#container .projects .android-cards a:nth-child(4):hover {
+  box-shadow: 0 0 5px 3px #fb024e;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(4)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/imageEditor.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(4):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(4):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(5) {
+  box-shadow: 0 0 5px #45668e;
+}
+#container .projects .android-cards a:nth-child(5):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(5) .card_header {
+  color: #45668e;
+}
+#container .projects .android-cards a:nth-child(5):hover {
+  box-shadow: 0 0 5px 3px #45668e;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(5)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/todoApp.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(5):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(5):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(6) {
+  box-shadow: 0 0 5px #82ffbe;
+}
+#container .projects .android-cards a:nth-child(6):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(6) .card_header {
+  color: #82ffbe;
+}
+#container .projects .android-cards a:nth-child(6):hover {
+  box-shadow: 0 0 5px 3px #82ffbe;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(6)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/contactManager.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(6):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(6):not(:hover)::before {
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(7) {
+  box-shadow: 0 0 5px #c96c7e;
+}
+#container .projects .android-cards a:nth-child(7):hover::before {
+  animation: projectView 5s 1s linear;
+}
+#container .projects .android-cards a:nth-child(7) .card_header {
+  color: #c96c7e;
+}
+#container .projects .android-cards a:nth-child(7):hover {
+  box-shadow: 0 0 5px 3px #c96c7e;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(7)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(images/projects/android/imageGenerator.webp);
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#container .projects .android-cards a:nth-child(7):hover::before {
+  top: 0;
+  transition: all 0.5s;
+}
+#container .projects .android-cards a:nth-child(7):not(:hover)::before {
+  transition: all 0.5s;
+}
 #container .about {
   background-color: black;
   position: relative;
   padding: 2rem 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
-  #container .about .main-header {
-    margin: 4rem 0; }
-  #container .about .mypic {
-    height: 25rem;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    opacity: 0.5;
-    filter: grayscale(1);
-    pointer-events: none; }
-  #container .about .details {
-    text-align: center;
-    margin-top: -50px; }
-    #container .about .details h1 {
-      border: none;
-      font-size: 2rem; }
-    #container .about .details p {
-      font-size: 1rem;
-      color: #009e66; }
-    #container .about .details .experoence {
-      width: 50%;
-      color: #d4d4d4;
-      line-height: 1.5rem;
-      text-transform: capitalize;
-      font-weight: 100;
-      margin: 1rem auto; }
-    #container .about .details .contact {
-      position: absolute;
-      text-align: center;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 1rem 0; }
-      #container .about .details .contact img {
-        margin: 0.8rem;
-        height: 1.5rem; }
-  #container .about .social-media {
-    position: absolute;
-    right: 120px;
-    top: 50%;
-    transform: translateY(-50%); }
-    #container .about .social-media a img {
-      display: block;
-      margin: 15px 0;
-      height: 2rem;
-      opacity: 0.7; }
-
+  justify-content: space-evenly;
+}
+#container .about .main-header {
+  margin: 4rem 0;
+}
+#container .about .mypic {
+  height: 25rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: grayscale(1);
+  pointer-events: none;
+}
+#container .about .details {
+  text-align: center;
+  margin-top: -50px;
+}
+#container .about .details h1 {
+  border: none;
+  font-size: 2rem;
+}
+#container .about .details p {
+  font-size: 1rem;
+  color: #009e66;
+}
+#container .about .details .experoence {
+  width: 50%;
+  color: #d4d4d4;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: 1rem auto;
+}
+#container .about .details .contact {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1rem 0;
+}
+#container .about .details .contact img {
+  margin: 0.8rem;
+  height: 1.5rem;
+}
+#container .about .social-media {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#container .about .social-media a img {
+  display: block;
+  margin: 15px 0;
+  height: 2rem;
+  opacity: 0.7;
+}
 #container .copyright {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   opacity: 0.2;
-  letter-spacing: 0.1rem; }
-
+  letter-spacing: 0.1rem;
+}
 @media screen and (max-width: 1080px) {
   #container .home .hero .primary_languages {
     top: 55%;
     left: 60%;
-    transform: translateX(-50%); }
-    #container .home .hero .primary_languages img {
-      width: 20rem; }
+    transform: translateX(-50%);
+  }
+  #container .home .hero .primary_languages img {
+    width: 20rem;
+  }
   .about .mypic {
-    display: none; }
+    display: none;
+  }
   .about .details {
-    margin: 10px; }
-    .about .details .experoence {
-      min-width: 80%; }
+    margin: 10px;
+  }
+  .about .details .experoence {
+    min-width: 80%;
+  }
   .about .social-media {
-    margin: 12rem -5rem; } }
-
+    margin: 12rem -5rem;
+  }
+}
 @media screen and (max-width: 680px) {
   #container .header {
-    justify-content: center; }
+    justify-content: center;
+  }
   #container .main-header {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+  }
   #container .home .header {
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+  }
   #container .home .hero {
-    padding: 2rem; }
-    #container .home .hero .skill {
-      font-size: 3.5rem; }
-      #container .home .hero .skill .skill_typing {
-        position: relative;
-        top: -20px;
-        font-size: 3rem; }
-    #container .home .hero .intro {
-      margin-top: 20px;
-      left: 50%; }
-    #container .home .hero .home_buttons {
-      margin-top: 50px; }
-    #container .home .hero .primary_languages {
-      top: 55%;
-      right: -50%;
-      transform: translateX(-50%); }
-      #container .home .hero .primary_languages img {
-        width: 17rem; }
+    padding: 2rem;
+  }
+  #container .home .hero .skill {
+    font-size: 3.5rem;
+  }
+  #container .home .hero .skill .skill_typing {
+    position: relative;
+    top: -20px;
+    font-size: 3rem;
+  }
+  #container .home .hero .intro {
+    margin-top: 20px;
+    left: 50%;
+  }
+  #container .home .hero .home_buttons {
+    margin-top: 50px;
+  }
+  #container .home .hero .primary_languages {
+    top: 55%;
+    right: -50%;
+    transform: translateX(-50%);
+  }
+  #container .home .hero .primary_languages img {
+    width: 17rem;
+  }
   #container .projects {
     padding: 10px;
-    margin: 2rem 0.7rem; }
-    #container .projects .section_header {
-      display: block;
-      text-align: center; }
-    #container .projects .skills ul {
-      justify-content: center;
-      margin: 1.5rem 0;
-      width: initial; }
-    #container .projects .cards a {
-      min-width: 14rem;
-      padding: 0; }
-      #container .projects .cards a .card .card_header {
-        font-size: 1.2rem;
-        margin: 1.5rem; }
-      #container .projects .cards a .card .langs {
-        font-size: 0.7rem;
-        line-height: 1.7; }
+    margin: 2rem 0.7rem;
+  }
+  #container .projects .section_header {
+    display: block;
+    text-align: center;
+  }
+  #container .projects .skills ul {
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: initial;
+  }
+  #container .projects .cards a {
+    min-width: 14rem;
+    padding: 0;
+  }
+  #container .projects .cards a .card .card_header {
+    font-size: 1.2rem;
+    margin: 1.5rem;
+  }
+  #container .projects .cards a .card .langs {
+    font-size: 0.7rem;
+    line-height: 1.7;
+  }
   #container .scroll {
-    display: none; }
+    display: none;
+  }
   #container .about {
-    padding: 2rem; }
-    #container .about .details {
-      margin: 40px 0; }
-      #container .about .details h1 {
-        font-size: 1.4rem; }
-      #container .about .details .experoence {
-        font-size: 0.8rem;
-        width: 100%; }
-    #container .about .social-media {
-      bottom: 20px;
-      right: 100px; } }
-
+    padding: 2rem;
+  }
+  #container .about .details {
+    margin: 40px 0;
+  }
+  #container .about .details h1 {
+    font-size: 1.4rem;
+  }
+  #container .about .details .experoence {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  #container .about .social-media {
+    bottom: 20px;
+    right: 100px;
+  }
+}
 @media screen and (max-width: 385px) {
   #container .about_me {
-    display: none; } }
-
+    display: none;
+  }
+}
 @keyframes start_typing {
   3% {
-    left: 0%; }
+    left: 0%;
+  }
   30% {
-    left: 100%; }
+    left: 100%;
+  }
   80% {
-    left: 100%; }
+    left: 100%;
+  }
   100% {
-    left: 0%; } }
+    left: 0%;
+  }
+}
